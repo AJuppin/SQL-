@@ -1,0 +1,35 @@
+CREATE database exercice;
+
+CREATE TABLE Matter (
+	codemat VARCHAR(20) PRIMARY KEY,
+	wording VARCHAR(20), 
+	coef float); 
+
+
+CREATE TABLE Student (
+	numstud INT PRIMARY KEY,
+	name VARCHAR(30), 
+	firstname VARCHAR(30), 
+	dateofbirth DATE, 
+	street VARCHAR(30), 
+	postalcod VARCHAR(10), 
+	city VARCHAR(30)
+);
+
+
+CREATE TABLE Test (
+	numtest INT PRIMARY KEY,
+	testdate DATE,
+	place VARCHAR(80),
+	codemat VARCHAR(20),
+	CONSTRAINT FOREIGN KEY (codemat) REFERENCES Matter(codemat)
+);
+
+
+CREATE TABLE Notation (
+    score FLOAT,
+    numstud INT,
+    numtest INT,
+    CONSTRAINT FOREIGN KEY (numstud) REFERENCES Student(numstud),
+    CONSTRAINT FOREIGN KEY (numtest) REFERENCES Test(numtest)
+);

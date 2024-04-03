@@ -1,0 +1,64 @@
+
+INSERT INTO Matter (codemat, wording, coef)
+VALUES 
+    ('Mat', 'Mathematics', 1),
+    ('Phy', 'Physics', 2),
+    ('Che', 'Chemistry', 1);
+
+
+INSERT INTO Student (numstud, name, firstname, dateofbirth, street, postalcod, city)
+VALUES 
+    (1, 'Dupont', 'John', '1990-05-15', '123 Avenue Street', '12345', 'Miami'),
+    (2, 'Durand', 'Emma', '1992-08-20', '456 Main Street', '67890', 'Lille'),
+    (3, 'Martin', 'Lucas', '1991-04-10', '789 Elm Street', '54321', 'Miami'),
+    (4, 'Smith', 'Olivia', '1993-01-25', '321 Oak Street', '98765', 'Paris'),
+    (5, 'Johnson', 'William', '1990-11-30', '654 Pine Street', '13579', 'Ballancourt'),
+    (6, 'Williams', 'Sophia', '1992-07-05', '987 Maple Street', '24680', 'Miami'),
+    (7, 'Brown', 'Liam', '1994-03-12', '159 Cedar Street', '80246', 'Paris');
+
+
+
+INSERT INTO Test (numtest, testdate, place, codemat)
+VALUES 
+    (1, '2014-01-15', 'collège Rosa Luxembourg 91090 Lisses', 'Mat'),
+    (2, '2014-03-20', 'collège Rosa Luxembourg 91090 Lisses', 'Phy'),
+    (3, '2014-05-25', 'collège Rosa Luxembourg 91090 Lisses', 'Mat'),
+    (4, '2014-07-10', 'collège Rosa Luxembourg 91090 Lisses', 'Che'),
+    (5, '2014-02-05', 'collège Rosa Luxembourg 91090 Lisses', 'Phy'),
+    (6, '2014-11-12', 'collège Rosa Luxembourg 91090 Lisses', 'Mat');
+
+
+
+INSERT INTO Notation (score, numstud, numtest)
+VALUES 
+    (15, 1, 1),
+    (8, 2, 1),
+    (9, 3, 1),
+    (14, 4, 1),
+    (3, 5, 1),
+    (17, 6, 2),
+    (19, 7, 2),
+    (19, 1, 2),
+    (6, 2, 2),
+    (14, 3, 2),
+    (16, 4, 3),
+    (9, 5, 3),
+    (15, 6, 3),
+    (8, 7, 3),
+    (13, 1, 3),
+    (16, 2, 3),
+    (8, 3, 4),
+    (19, 4, 4),
+    (7, 5, 4),
+    (14, 6, 4),
+    (15, 7, 4),
+    (8, 1, 5),
+    (18, 2, 5),
+    (16, 3, 5),
+    (6, 4, 5),
+    (4, 5, 5),
+    (17, 6, 6),
+    (20, 7, 6),
+    (20, 1, 6),
+    (6, 2, 6);
+   
